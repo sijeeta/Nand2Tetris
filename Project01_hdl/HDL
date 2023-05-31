@@ -1,0 +1,16 @@
+And.hdl
+Or.hdl
+Not.hdl
+Not.hdl
+Xor.hdl
+Mux.hdl(Multiplexor)
+DeMux.hdl(Demultiplexor)
+And16.hdl
+Or16.hdl
+Not16.hdl
+Or8Way.hdl
+Mux16.hdl
+Mux4Way16.hdl
+Mux8Way16.hdl
+DeMux4Way.hdl
+DeMux8Way.hdl
