@@ -7,12 +7,20 @@ Course : Build a Modern Computer from First Principles: From Nand to Tetris
 
 
 
-## Week 1 🌟
+## Project01 🌟
 
-These are the projects that I have done in the first week of my coding journey:
+Writing hdl file for basic gates from NAND Gate and using the same to create other gates
 
-- Project 1: A simple calculator app that can perform basic arithmetic operations. 💻
-- Project 2: A responsive website that displays information about different countries using an API. 🌎
-- Project 3: A tic-tac-toe game that you can play with a friend or against the computer. 🎮
+- Basic Gates: AND, OR, XOR, NOT, Mux , DMux
+- 16 bit Gates using basic gates: AND16 , NOT16, OR16 , Mux16 
+- Multiple input to two 16 bit output or viceversa :Or8Way , Mux4Way16 , Mux8Way16, DMux4Way , DMux8Way
 
+
+## Project02 🌟
+
+Writing hdl file for basic gates from NAND Gate and using the same to create other gates
+
+- Basic Gates: AND, OR, XOR, NOT, Mux , DMux
+- 16 bit Gates using basic gates: AND16 , NOT16, OR16 , Mux16 
+- Multiple input to two 16 bit output or viceversa :Or8Way , Mux4Way16 , Mux8Way16, DMux4Way , DMux8Way
 
