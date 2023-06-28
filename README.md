@@ -29,10 +29,9 @@ Writing hdl file for basic operations
 
 ## Project03 🌟
 
-Writing hdl file for basic operations
+Writing hdl file for memory Unit 
 
-- HalfAdder : Has two input and outputs a sum and carry
-- FullAdder : Using two halfadder
-- Add16 : Adds two 16 bit inputs using one half adder and 15 full addder
-- Inc16 : Increments a 16 bit input by +1 value using Add16
-- ALU : Arithmetic Logic Unit using various Mux input and OR gate
+- Bit : Has two input and outputs a sum and carry
+- Register : Use 1 bit to make Registers where combining such 8 Registers generate RAM8
+- RAM : hdl file to create sucessive RAM unit like RAM8, RAM64, RAM512, RAM4K , RAM16K
+
