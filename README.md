@@ -32,6 +32,12 @@ Writing hdl file for basic operations
 Writing hdl file for memory Unit 
 
 - Bit : Has two input and outputs a sum and carry
-- Register : Use 1 bit to make Registers where combining such 8 Registers generate RAM8
+- Register : Use 1 bit to make Registers where combining such 8 Registers generate RAM8. Registers have one input and a load. 
 - RAM : hdl file to create sucessive RAM unit like RAM8, RAM64, RAM512, RAM4K , RAM16K
+
+## Project04 🌟
+
+Writing hack programming using Assembly language 
+
+- 1) Mult.asm : This prgramming multiplies two number R0 and R1 using the method R1 added to itself R0 times.
 
