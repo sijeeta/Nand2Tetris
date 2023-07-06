@@ -1,0 +1,39 @@
+// This file is part of www.nand2tetris.org
+// and the book "The Elements of Computing Systems"
+// by Nisan and Schocken, MIT Press.
+// File name: projects/03/a/PC.hdl
+
+/**
+ * A 16-bit counter with load and reset control bits.
+ * if      (reset[t] == 1) out[t+1] = 0
+ * else if (load[t] == 1)  out[t+1] = in[t]
+ * else if (inc[t] == 1)   out[t+1] = out[t] + 1  (integer addition)
+ * else                    out[t+1] = out[t]
+ */
+
+CHIP PC {
+    IN in[16],load,inc,reset;
+    OUT out[16];
+
+    PARTS:
+//1) The incrementor increments the input value and gives an output .
+             ///// inc ////
+//2)The register output is fed to a multiplexor1 with second input from incrementor o/p
+   if selector is 1 then incrementor o/p is selected else the output is register o/p
+            /////  load ////
+//3) The mux1 o/p becomes the input of mux2 which has second input as the new input.
+   if selector is 1, the new input becomes the o/p else the mux1 o/p remains the o/p of mux2.
+          ///// reset /////
+//4) The mux3 has mux2 o/p as one of its input and all zeros in the second input.
+   if selector is 1 then o/p is all zero else the continued state of mux1o/p becomes the Output
+//5) Mux3 o/p is then fed back to register which has load value set as true, so that the register o/p is the previous mux3 o/p.
+    this o/p also goes back to incrementor as input
+
+
+
+    Register(in=resetmuxout, load=true, out=regout , out= out);
+    Inc16(in = regout , out=incout);
+    Mux16(a=regout , b=incout , sel=inc , out= incmuxout);
+    Mux16(a=incmuxout , b=in, sel=load , out= loadmuxout);
+    Mux16(a=loadmuxout , b=false , sel=reset , out= resetmuxout);
+}
