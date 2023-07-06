@@ -34,6 +34,7 @@ Writing hdl file for memory Unit
 - Bit : Has two input and outputs a sum and carry
 - Register : Use 1 bit to make Registers where combining such 8 Registers generate RAM8. Registers have one input and a load. 
 - RAM : hdl file to create sucessive RAM unit like RAM8, RAM64, RAM512, RAM4K , RAM16K
+- PC: Counters using Register, Incrementor and Mux16 chip to either load, increment or reset the input value
 
 ## Project04 🌟
 
